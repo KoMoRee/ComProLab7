@@ -2,7 +2,19 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	//ไม่ต้องเติม function main()
+    if ((64 < x) && (x < 91)){
+        if (x == 'A'){
+            x = 'Z';
+            return x;
+        }else{
+            --x;
+            return x;
+            }
+    }else{
+        x = '0';
+        return x;
+    }
 }
 
 int main(){
